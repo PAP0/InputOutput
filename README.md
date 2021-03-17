@@ -29,7 +29,7 @@ Overige software:
 Hardware:
 - Pc.
 - Arduino.
-- Oculus Rift S.
+- Oculus Rift S + Rift S Controllers.
 
 ## Scrum
 Trello: https://trello.com/b/nNmzLZ4g/input-output
