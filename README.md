@@ -34,7 +34,7 @@ Hardware:
 ## Scrum
 Trello: https://trello.com/b/nNmzLZ4g/input-output
 
-Github: https://github.com/Bjornraaf/INOUT
+Github: https://github.com/D-RaMedia/InputOutput
 
 ## Portfolio
 Presentatie 1: https://docs.google.com/presentation/d/1jIwwC6Xw2Buc8SrNTVnEk-r1r680OzysrxJKFpiQNUQ/edit#slide=id.p
