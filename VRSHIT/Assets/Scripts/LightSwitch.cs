@@ -5,29 +5,14 @@ using UnityEngine;
 public class LightSwitch : MonoBehaviour
 {
     public GameObject lightSwitch;
-    private bool on = false;
+    private bool on = true;
+    public SerialController serialController;
+    void Start()
+    {
+        serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
-    //void Hit()
-    //{
-    // if (on == false)
-    // {
-    //     light.SetActive(true);
-    //     on = true;
-    // }
-    // else if (on == true)
-    //  {
-    //       light.SetActive(false);
-    //       on = false;
-    //   }
-    //}
-    //void Update()
-    //{
-    //   if (Input.GetKeyDown("space"))
-    //  {
-    //      Hit();
-    //   }
-    //
-    //}
+        Debug.Log("Press A or Z to execute some actions");
+    }
 
     void OnCollisionEnter(Collision collision)
     {
