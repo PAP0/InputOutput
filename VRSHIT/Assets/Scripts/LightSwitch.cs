@@ -9,9 +9,7 @@ public class LightSwitch : MonoBehaviour
     public SerialController serialController;
     void Start()
     {
-        serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
-        Debug.Log("Press A or Z to execute some actions");
     }
 
     void OnCollisionEnter(Collision collision)
