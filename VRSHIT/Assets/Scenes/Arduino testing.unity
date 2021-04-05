@@ -3327,7 +3327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: portName
-      value: COM8
+      value: COM3
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: reconnectionDelay
@@ -10304,8 +10304,8 @@ GameObject:
   - component: {fileID: 1027148863}
   - component: {fileID: 1027148862}
   - component: {fileID: 1027148861}
-  - component: {fileID: 1027148860}
   - component: {fileID: 1027148865}
+  - component: {fileID: 1027148860}
   m_Layer: 0
   m_Name: LightSwitch
   m_TagString: Untagged
@@ -10322,10 +10322,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1027148859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fca547c7c28dabc44826e9eb89d2db68, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a1815ab8d05e6d41a977b43884b4079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights: {fileID: 1099645680}
   serialController: {fileID: 846985892}
 --- !u!65 &1027148861
 BoxCollider:
