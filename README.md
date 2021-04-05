@@ -2,8 +2,8 @@
 
 Team:
 1. Bjorn Ravensbergen.
-2. Diego Ramon.
-3. Patryk Podworny.
+2. Diego Ramón Schluter.
+3. Patryk Podwórny.
 
 ## Ontwerp
 School Escape is een singleplayer VR escape room. De escape room is geconnect met een arduino waarbij je lichten kan aan sturen in de kamer.
@@ -16,7 +16,7 @@ Er zijn drie verschillende soorten puzzles die in de kamer voorkomen:
 - Color Code.
 - Date Locating Puzzle.
 
-Onze speciale input is een VR & Arduino die de player movement detecteert & lampen aan kan doen.
+Onze speciale input is een VR & Arduino die de player movement detecteert & lampen kan aansturen.
 
 ## Onderzoek
 Engine:
