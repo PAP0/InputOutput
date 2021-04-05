@@ -22,6 +22,9 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
         Debug.Log("Press A or Z to execute some actions");
+
+        Debug.Log("Sending F");
+        serialController.SendSerialMessage("F");
     }
 
     // Executed each frame
@@ -39,12 +42,16 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
             serialController.SendSerialMessage("A");
         }
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.B))
         {
-            Debug.Log("Sending Z");
-            serialController.SendSerialMessage("Z");
+            Debug.Log("Sending B");
+            serialController.SendSerialMessage("B");
         }
-
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("Sending C");
+            serialController.SendSerialMessage("C");
+        }
 
         //---------------------------------------------------------------------
         // Receive data
