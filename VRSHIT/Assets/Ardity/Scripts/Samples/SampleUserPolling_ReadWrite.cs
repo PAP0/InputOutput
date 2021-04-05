@@ -7,6 +7,7 @@
  */
 
 using UnityEngine;
+using System.Collections.Generic;
 using System.Collections;
 
 /**
@@ -23,8 +24,14 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
 
         Debug.Log("Press A or Z to execute some actions");
 
-        Debug.Log("Sending F");
-        serialController.SendSerialMessage("F");
+        Debug.Log("Sending A");
+        serialController.SendSerialMessage("A");
+
+        Debug.Log("Sending B");
+        serialController.SendSerialMessage("B");
+
+        Debug.Log("Sending C");
+        serialController.SendSerialMessage("C");
     }
 
     // Executed each frame
@@ -51,6 +58,21 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
         {
             Debug.Log("Sending C");
             serialController.SendSerialMessage("C");
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("Sending F");
+            serialController.SendSerialMessage("F");
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("Sending G");
+            serialController.SendSerialMessage("G");
+        }
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Debug.Log("Sending H");
+            serialController.SendSerialMessage("H");
         }
 
         //---------------------------------------------------------------------
