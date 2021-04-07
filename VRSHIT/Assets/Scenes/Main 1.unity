@@ -3772,6 +3772,7 @@ GameObject:
   - component: {fileID: 286983450}
   - component: {fileID: 286983449}
   - component: {fileID: 286983448}
+  - component: {fileID: 286983447}
   m_Layer: 0
   m_Name: Push
   m_TagString: Untagged
@@ -3794,6 +3795,26 @@ Transform:
   m_Father: {fileID: 1639838532}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &286983447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286983445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!153 &286983448
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -5160,6 +5181,7 @@ GameObject:
   - component: {fileID: 401216100}
   - component: {fileID: 401216099}
   - component: {fileID: 401216098}
+  - component: {fileID: 401216101}
   - component: {fileID: 401216097}
   m_Layer: 0
   m_Name: Push
@@ -5320,6 +5342,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18, y: 0.05898583, z: 0.18}
   m_Center: {x: 0, y: 0.034461558, z: 0}
+--- !u!114 &401216101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401216095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1375711175}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &410806175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6887,6 +6941,7 @@ GameObject:
   - component: {fileID: 488271057}
   - component: {fileID: 488271056}
   - component: {fileID: 488271055}
+  - component: {fileID: 488271054}
   m_Layer: 0
   m_Name: Push
   m_TagString: Untagged
@@ -6909,6 +6964,26 @@ Transform:
   m_Father: {fileID: 646317961}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488271054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488271052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!153 &488271055
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -7856,6 +7931,7 @@ GameObject:
   - component: {fileID: 557074901}
   - component: {fileID: 557074900}
   - component: {fileID: 557074899}
+  - component: {fileID: 557074902}
   - component: {fileID: 557074898}
   m_Layer: 0
   m_Name: Push
@@ -8016,6 +8092,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18, y: 0.05898583, z: 0.18}
   m_Center: {x: 0, y: 0.034461558, z: 0}
+--- !u!114 &557074902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557074896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 231610379}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &557145923
 GameObject:
   m_ObjectHideFlags: 0
@@ -10786,6 +10894,7 @@ GameObject:
   - component: {fileID: 752965228}
   - component: {fileID: 752965227}
   - component: {fileID: 752965226}
+  - component: {fileID: 752965225}
   m_Layer: 0
   m_Name: Push
   m_TagString: Untagged
@@ -10808,6 +10917,26 @@ Transform:
   m_Father: {fileID: 45886676}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &752965225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752965223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!153 &752965226
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -20968,6 +21097,7 @@ GameObject:
   - component: {fileID: 1489151552}
   - component: {fileID: 1489151551}
   - component: {fileID: 1489151550}
+  - component: {fileID: 1489151553}
   - component: {fileID: 1489151549}
   m_Layer: 0
   m_Name: Push
@@ -21128,6 +21258,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18, y: 0.05898583, z: 0.18}
   m_Center: {x: 0, y: 0.034461558, z: 0}
+--- !u!114 &1489151553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489151547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 698874254}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1493050947
 GameObject:
   m_ObjectHideFlags: 0
@@ -26130,9 +26292,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1830534447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec520f0fa4f46243b6a4fe43c1d9a9c, type: 3}
+  m_Script: {fileID: 11500000, guid: e62b54b79a910e0478e127a3196c4e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cube1: {fileID: 698874254}
+  Cube2: {fileID: 932417698}
+  Cube3: {fileID: 1375711175}
+  Cube4: {fileID: 231610379}
+  Door: {fileID: 1057255453}
 --- !u!1 &1847617456
 GameObject:
   m_ObjectHideFlags: 0
@@ -27244,6 +27411,7 @@ GameObject:
   - component: {fileID: 1951539977}
   - component: {fileID: 1951539976}
   - component: {fileID: 1951539975}
+  - component: {fileID: 1951539978}
   - component: {fileID: 1951539974}
   m_Layer: 0
   m_Name: Push
@@ -27404,6 +27572,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18, y: 0.05898583, z: 0.18}
   m_Center: {x: 0, y: 0.034461558, z: 0}
+--- !u!114 &1951539978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951539972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 932417698}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1964931697
 GameObject:
   m_ObjectHideFlags: 0
@@ -27614,6 +27814,7 @@ GameObject:
   - component: {fileID: 1975677304}
   - component: {fileID: 1975677303}
   - component: {fileID: 1975677302}
+  - component: {fileID: 1975677301}
   m_Layer: 0
   m_Name: Push
   m_TagString: Untagged
@@ -27636,6 +27837,26 @@ Transform:
   m_Father: {fileID: 846640777}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1975677301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975677299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!153 &1975677302
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -27942,6 +28163,7 @@ GameObject:
   - component: {fileID: 1981102725}
   - component: {fileID: 1981102724}
   - component: {fileID: 1981102723}
+  - component: {fileID: 1981102726}
   - component: {fileID: 1981102722}
   m_Layer: 0
   m_Name: Push
@@ -28110,6 +28332,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18, y: 0.05898583, z: 0.18}
   m_Center: {x: 0, y: 0.034461558, z: 0}
+--- !u!114 &1981102726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981102720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e615b895f55722b4dae87b89b3ef6052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  deadZone: 0.025
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1986216769
 PrefabInstance:
   m_ObjectHideFlags: 0
