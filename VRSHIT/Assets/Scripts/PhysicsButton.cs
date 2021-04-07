@@ -56,5 +56,6 @@ public class PhysicsButton : MonoBehaviour
     {
         _isPressed = false;
         onReleased.Invoke();
+        Debug.Log("Released");
     }
 }
