@@ -4,46 +4,81 @@ using UnityEngine;
 
 public class LightSwitch : MonoBehaviour
 {
-    public GameObject spotlight1;
-    public GameObject spotlight2;
-    public GameObject spotlight3;
-    public GameObject bwokenWire;
-    public GameObject winWindow;
-    private int E;
-    public SerialController serialController;
-    void Start()
+public GameObject spotlight1;
+public GameObject spotlight2;
+public GameObject spotlight3;
+public GameObject bwokenWire;
+public GameObject winWindow;
+private int E;
+public SerialController serialController;
+
+void Start()
+{
+    serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
+
+    Debug.Log("Sending A");
+    serialController.SendSerialMessage("A");
+
+    Debug.Log("Sending B");
+    serialController.SendSerialMessage("B");
+
+    Debug.Log("Sending C");
+    serialController.SendSerialMessage("C");
+
+}
+
+
+
+void Update()
+{
+
+    if (bwokenWire.activeSelf)
     {
-        serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
-
-        Debug.Log("Sending A");
-        serialController.SendSerialMessage("A");
-
-        Debug.Log("Sending B");
-        serialController.SendSerialMessage("B");
-
-        Debug.Log("Sending C");
-        serialController.SendSerialMessage("C");
-
+        Debug.Log("Sending F");
+        serialController.SendSerialMessage("F");
+        spotlight1.SetActive(true);
     }
 
-
-
-    void Update()
+    if (E >= 3)
     {
-        if (bwokenWire.activeSelf)
+        E = 3;
+    }
+
+    if (spotlight1.activeSelf)
+    {
+        winWindow.SetActive(true);
+    }
+
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            spotlight1.SetActive(true);
-            E++;
+            Debug.Log("Sending A");
+            serialController.SendSerialMessage("A");
         }
 
-        if (E >= 3)
+        if (Input.GetKeyDown(KeyCode.B))
         {
-            E = 3;
+            Debug.Log("Sending B");
+            serialController.SendSerialMessage("B");
         }
-
-        if (E == 1)
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            winWindow.SetActive(true);
+            Debug.Log("Sending C");
+            serialController.SendSerialMessage("C");
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("Sending F");
+            serialController.SendSerialMessage("F");
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("Sending G");
+            serialController.SendSerialMessage("G");
+        }
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Debug.Log("Sending H");
+            serialController.SendSerialMessage("H");
         }
         //---------------------------------------------------------------------
         // Receive data
@@ -51,16 +86,17 @@ public class LightSwitch : MonoBehaviour
 
         string message = serialController.ReadSerialMessage();
 
-        if (message == null)
-            return;
+    if (message == null)
+        return;
 
-        // Check if the message is plain data or a connect/disconnect event.
-        if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_CONNECTED))
-            Debug.Log("Connection established");
-        else if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_DISCONNECTED))
-            Debug.Log("Connection attempt failed or disconnection detected");
-        else
-            Debug.Log("Message arrived: " + message);
+    // Check if the message is plain data or a connect/disconnect event.
+    if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_CONNECTED))
+        Debug.Log("Connection established");
+    else if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_DISCONNECTED))
+        Debug.Log("Connection attempt failed or disconnection detected");
+    else
+        Debug.Log("Message arrived: " + message);
     }
 
 }
+
