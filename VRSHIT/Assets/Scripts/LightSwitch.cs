@@ -4,33 +4,49 @@ using UnityEngine;
 
 public class LightSwitch : MonoBehaviour
 {
-    public GameObject lights;
-    private bool on = true;
+    public GameObject spotlight1;
+    public GameObject spotlight2;
+    public GameObject spotlight3;
+    public GameObject bwokenWire;
+    public GameObject winWindow;
+    private int E;
     public SerialController serialController;
     void Start()
     {
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
+
         Debug.Log("Sending A");
         serialController.SendSerialMessage("A");
+
+        Debug.Log("Sending B");
+        serialController.SendSerialMessage("B");
+
+        Debug.Log("Sending C");
+        serialController.SendSerialMessage("C");
+
     }
 
-    void OnCollisionEnter(Collision collision)
+
+
+    void Update()
     {
-        if (collision.gameObject.tag == "Hand" && on == true)
+        if (bwokenWire.activeSelf)
         {
-            lights.SetActive(false);
-            on = false;
-            Debug.Log("Sending Z");
-            serialController.SendSerialMessage("Z");
+            spotlight1.SetActive(true);
+            E++;
+            Debug.Log(E);
         }
-        else if (collision.gameObject.tag == "Hand" && on == false)
+
+        if (E >= 3)
         {
-            lights.SetActive(true);
-            on = true;
-            Debug.Log("Sending A");
-            serialController.SendSerialMessage("A");
+            E = 3;
         }
-                //---------------------------------------------------------------------
+
+        if (E == 1)
+        {
+            winWindow.SetActive(true);
+        }
+        //---------------------------------------------------------------------
         // Receive data
         //---------------------------------------------------------------------
 

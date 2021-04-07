@@ -11,8 +11,7 @@ public class Light1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Sending A");
-        serialController.SendSerialMessage("A");
+
     }
 
     public void turnOff()
