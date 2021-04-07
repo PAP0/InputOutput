@@ -6,10 +6,9 @@ public class LightSwitch : MonoBehaviour
 {
     public GameObject spotlight1;
     public GameObject spotlight2;
-    public GameObject spotlight3;
     public GameObject bwokenWire;
-    public GameObject winWindow;
-    private int E;
+    public GameObject bwokenBottle;
+    public GameObject door;
     public SerialController serialController;
     void Start()
     {
@@ -33,23 +32,21 @@ public class LightSwitch : MonoBehaviour
         if (bwokenWire.activeSelf)
         {
             spotlight1.SetActive(true);
-            E++;
+            Debug.Log("Sending F");
+            serialController.SendSerialMessage("F");
         }
-
-        if (E >= 3)
+        if (bwokenBottle.activeSelf)
         {
-            E = 3;
+            spotlight2.SetActive(true);
+            Debug.Log("Sending G");
+            serialController.SendSerialMessage("G");
         }
 
-        if (E == 1)
-        {
-            winWindow.SetActive(true);
-        }
-        //---------------------------------------------------------------------
-        // Receive data
-        //---------------------------------------------------------------------
+            //---------------------------------------------------------------------
+            // Receive data
+            //---------------------------------------------------------------------
 
-        string message = serialController.ReadSerialMessage();
+            string message = serialController.ReadSerialMessage();
 
         if (message == null)
             return;

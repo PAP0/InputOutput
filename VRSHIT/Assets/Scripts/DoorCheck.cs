@@ -8,11 +8,13 @@ public class DoorCheck : MonoBehaviour
     public GameObject Cube2;
     public GameObject Cube3;
     public GameObject Cube4;
-
+    public GameObject spotlight3;
     public GameObject Door;
+    public SerialController serialController;
 
     void Start()
     {
+        serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
         Door.SetActive(true);
     }
     void Update()
@@ -26,6 +28,9 @@ public class DoorCheck : MonoBehaviour
                     if (Cube4.activeSelf == false)
                     {
                         Door.SetActive(false);
+                        spotlight3.SetActive(true);
+                        Debug.Log("Sending H");
+                        serialController.SendSerialMessage("H");
                     }
                 }
             }
