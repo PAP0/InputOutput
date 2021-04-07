@@ -34,7 +34,6 @@ public class LightSwitch : MonoBehaviour
         {
             spotlight1.SetActive(true);
             E++;
-            Debug.Log(E);
         }
 
         if (E >= 3)
