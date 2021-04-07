@@ -837,7 +837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &130861984
 Transform:
   m_ObjectHideFlags: 0
@@ -3071,9 +3071,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
+      propertyPath: portName
+      value: COM3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: messageListener
       value: 
-      objectReference: {fileID: 2127404171}
+      objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: reconnectionDelay
       value: 0
@@ -5229,7 +5233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &555882665
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5239,7 +5243,7 @@ RectTransform:
   m_GameObject: {fileID: 555882664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
   m_Children:
   - {fileID: 2049360143}
   m_Father: {fileID: 1973409546}
@@ -5247,7 +5251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44, y: 68}
+  m_AnchoredPosition: {x: -60, y: 87}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555882666
@@ -11512,7 +11516,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1050665262}
-  - component: {fileID: 1050665263}
   m_Layer: 0
   m_Name: BrokenWire
   m_TagString: Untagged
@@ -11538,19 +11541,6 @@ Transform:
   m_Father: {fileID: 134124942}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1050665263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050665261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1833890515bfb3d43a27f28bb90f2178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serialController: {fileID: 846985892}
 --- !u!1 &1062761127
 GameObject:
   m_ObjectHideFlags: 0
@@ -15715,18 +15705,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1050665263}
-        m_TargetAssemblyTypeName: Light1, Assembly-CSharp
-        m_MethodName: turnOff
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20393,7 +20371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1888825223
 Transform:
   m_ObjectHideFlags: 0
@@ -22085,7 +22063,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049360142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: -22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 555882665}
@@ -22093,7 +22071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46, y: 15}
+  m_AnchoredPosition: {x: 46, y: -9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2049360144
@@ -22443,7 +22421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2094472862
 Transform:
   m_ObjectHideFlags: 0
@@ -22779,11 +22757,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125519769}
   m_Mesh: {fileID: 8421744311104621043, guid: a92578eddda33f54e93a89fcb3112997, type: 3}
---- !u!1 &2127404171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-  m_PrefabInstance: {fileID: 1027303659}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2131587188
 GameObject:
   m_ObjectHideFlags: 0
