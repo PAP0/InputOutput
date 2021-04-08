@@ -2,38 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSwitch : MonoBehaviour
+public class LightSwitch1 : MonoBehaviour
 {
-    public GameObject spotlight2;
-    public GameObject bwokenBottle;
-    public GameObject script2;
+    public GameObject spotlight3;
+    public GameObject bwokenWire;
+    public GameObject script3;
     public SerialController serialController;
     
     void Start()
     {
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
-
-
-        Debug.Log("Sending B");
-        serialController.SendSerialMessage("B");
-
+        Debug.Log("Sending C");
+        serialController.SendSerialMessage("C");
 
     }
 
-    void Try()
+
+    void Try2()
     {
-        spotlight2.SetActive(true);
-        serialController.SendSerialMessage("G");
+        spotlight3.SetActive(true);
+        serialController.SendSerialMessage("H");
     }
-
 
     void Update()
     {
-        if (bwokenBottle.activeSelf)
+        if (bwokenWire.activeSelf)
         {
-            Try();
-            script2.SetActive(false);
+            Try2();
+            script3.SetActive(false);
+
         }
 
         //---------------------------------------------------------------------

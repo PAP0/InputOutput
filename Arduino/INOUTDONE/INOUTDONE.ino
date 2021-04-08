@@ -1,4 +1,4 @@
-bool lightOn = false;
+  bool lightOn = false;
 bool lightTwo = false;
 bool lightThree = false;
 
@@ -54,34 +54,34 @@ void loop() {
   if(lightOn)
   {
     digitalWrite(LED_ONE, LOW);
-    Serial.println("Off1");
+
   }
   else
   {
     digitalWrite(LED_ONE, HIGH);
-    Serial.println("On1");
+
   }
 
   if(lightTwo)
   {
     digitalWrite(LED_TWO, LOW);
-    Serial.println("Off2");
+
   }
   else
   {
     digitalWrite(LED_TWO, HIGH);
-    Serial.println("On2");
+
   }
 
   if(lightThree)
   {
     digitalWrite(LED_THREE, LOW);
-    Serial.println("Off3");
+
   }
   else
   {
     digitalWrite(LED_THREE, HIGH);
-    Serial.println("On3");
+
   }
   delay(100);        // delay in between reads for stability
 }

@@ -4706,6 +4706,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
+      propertyPath: portName
+      value: COM3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: messageListener
       value: 
       objectReference: {fileID: 0}
@@ -5181,7 +5185,6 @@ GameObject:
   - component: {fileID: 401216099}
   - component: {fileID: 401216098}
   - component: {fileID: 401216101}
-  - component: {fileID: 401216097}
   m_Layer: 0
   m_Name: Push
   m_TagString: Untagged
@@ -5204,18 +5207,6 @@ Transform:
   m_Father: {fileID: 1472298643}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &401216097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401216095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a30a3dbaa018f04f8aec07bb58078c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!153 &401216098
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -7931,7 +7922,6 @@ GameObject:
   - component: {fileID: 557074900}
   - component: {fileID: 557074899}
   - component: {fileID: 557074902}
-  - component: {fileID: 557074898}
   m_Layer: 0
   m_Name: Push
   m_TagString: Untagged
@@ -7954,18 +7944,6 @@ Transform:
   m_Father: {fileID: 921031916}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &557074898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557074896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a30a3dbaa018f04f8aec07bb58078c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!153 &557074899
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -8653,10 +8631,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotlight1: {fileID: 1888825222}
   spotlight2: {fileID: 130861983}
-  spotlight3: {fileID: 2094472861}
   bwokenWire: {fileID: 1050665261}
   bwokenBottle: {fileID: 869025445}
-  Door232332: {fileID: 1057255453}
+  door: {fileID: 1057255453}
+  script1: {fileID: 599678850}
   serialController: {fileID: 846985892}
 --- !u!1 &605146465
 GameObject:
@@ -26273,7 +26251,10 @@ MonoBehaviour:
   Cube2: {fileID: 932417698}
   Cube3: {fileID: 1375711175}
   Cube4: {fileID: 231610379}
+  spotlight3: {fileID: 2094472861}
+  script3: {fileID: 1830534447}
   Door: {fileID: 1057255453}
+  serialController: {fileID: 846985892}
 --- !u!1 &1847617456
 GameObject:
   m_ObjectHideFlags: 0
