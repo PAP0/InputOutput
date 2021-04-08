@@ -21,17 +21,16 @@ public class LightSwitch1 : MonoBehaviour
 
     void Try2()
     {
-        spotlight3.SetActive(true);
+        //spotlight3.SetActive(true);
         serialController.SendSerialMessage("H");
     }
 
     void Update()
     {
-        if (bwokenWire.activeSelf)
+        if (bwokenWire.activeSelf == true)
         {
             Try2();
             script3.SetActive(false);
-
         }
 
         //---------------------------------------------------------------------

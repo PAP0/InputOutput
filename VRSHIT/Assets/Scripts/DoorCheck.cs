@@ -32,7 +32,6 @@ public class DoorCheck : MonoBehaviour
                     if (Cube4.activeSelf == false)
                     {
                         Door.SetActive(false);
-                        spotlight1.SetActive(true);
                         Debug.Log("Sending F");
                         serialController.SendSerialMessage("F");
                         script1.SetActive(false);

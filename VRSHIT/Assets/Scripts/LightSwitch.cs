@@ -23,18 +23,20 @@ public class LightSwitch : MonoBehaviour
 
     void Try()
     {
-        spotlight2.SetActive(true);
+        //spotlight2.SetActive(true);
         serialController.SendSerialMessage("G");
     }
 
 
     void Update()
     {
-        if (bwokenBottle.activeSelf)
+        if (bwokenBottle.activeSelf == true)
         {
             Try();
             script2.SetActive(false);
         }
+
+
 
         //---------------------------------------------------------------------
         // Receive data
