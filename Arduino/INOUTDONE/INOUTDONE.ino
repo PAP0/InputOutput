@@ -1,4 +1,4 @@
-  bool lightOn = false;
+bool lightOn = false;
 bool lightTwo = false;
 bool lightThree = false;
 
