@@ -13,20 +13,14 @@ public class LightSwitch : MonoBehaviour
     {
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
-
-
         Debug.Log("Sending B");
         serialController.SendSerialMessage("B");
-
-
     }
 
     void Try()
     {
-        //spotlight2.SetActive(true);
         serialController.SendSerialMessage("G");
     }
-
 
     void Update()
     {
@@ -35,9 +29,6 @@ public class LightSwitch : MonoBehaviour
             Try();
             script2.SetActive(false);
         }
-
-
-
         //---------------------------------------------------------------------
         // Receive data
         //---------------------------------------------------------------------
@@ -55,5 +46,4 @@ public class LightSwitch : MonoBehaviour
         else
             Debug.Log("Message arrived: " + message);
     }
-
 }
